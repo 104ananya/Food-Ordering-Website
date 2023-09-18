@@ -16,7 +16,7 @@ const RestaurantCard = (props) => {
       <h3>{resName}</h3>
       <h4>{dish}</h4>
       <p>{type}</p>
-      <p>{rating} Star</p>
+      <p>{rating} Stars</p>
     </div>
   );
 };
