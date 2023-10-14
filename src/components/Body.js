@@ -2,6 +2,7 @@
 // import restaurants from "../utils/swiggydata";
 import RestaurantCard from "./ResturantCard";
 import { useEffect, useState } from "react";
+import ShimmerEffect from "./Shimmer";
 
 const Body = () => {
   // State Variable
@@ -30,8 +31,9 @@ const Body = () => {
     );
   };
 
+  // CONDITIONAL RENDERING
   if (List.length === 0) {
-    return <h1>Loading....</h1>;
+    return <ShimmerEffect />;
   }
 
   return (
